@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Challenge</title>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Artworks</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="card-container">
+  <div class="card">
+    <img src="1.gif" >
+    <h2>Tram Scene</h2>
+    <p>by Dedouze</p>
+  </div>
+  <div class="card">
+    <img src="2.gif">
+    <h2>Juke Box</h2>
+    <p>by Meko Deng</p>
+  </div>
+  <div class="card">
+    <img src="3.gif">
+    <h2>Grease Pencil</h2>
+    <p>by Kia Bettcher</p>
+  </div>
+  <div class="card">
+    <img src="4.gif" alt="Image 4">
+    <h2>Milyabin Ocean</h2>
+    <p>by Dedouze</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; MALIT, ANGELO </p>
+</footer>
+</body>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(5.jpg);
+}
+
+header {
+  background-color: #111111;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around ;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.5s; /* Added box-shadow for a glow effect */
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(255,255,240, 1); /* Added glowing box shadow on hover */
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+</style>
+
+</html>
